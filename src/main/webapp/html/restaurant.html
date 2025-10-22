@@ -1,0 +1,240 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Restaurant Menu</title>
+  <link rel="stylesheet" href="../css/restaurant.css" />
+</head>
+<body>
+  <header class="restaurant-header">
+    <h1>🔥 Spice Symphony</h1>
+    <p>Delicious Food. Fast Delivery. Happy You.</p>
+  </header>
+
+  <div class="menu-controls">
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="veg">Veg</option>
+      <option value="nonveg">Non-Veg</option>
+      <option value="starter">Starters</option>
+      <option value="main-course">Main Course</option>
+      <option value="dessert">Desserts</option>
+    </select>
+
+    <select id="sort">
+      <option value="asc">Sort by Price: Low to High</option>
+      <option value="desc">Sort by Price: High to Low</option>
+    </select>
+
+    <button onclick="location.href='cart.html'" class="cart-button">
+      🛒 Go to Cart (<span id="cart-count">0</span>)
+    </button>
+  </div>
+
+  <div class="container">
+    <!-- Start of 15 Menu Items -->
+    <!-- Sample images should be present in /img/ folder -->
+
+    <!-- Item 1 -->
+    <div class="menu-item" data-category="main-course" data-type="nonveg" data-price="250">
+      <div class="menu-item-left">
+        <img src="../img/chicken-meal.jpg" alt="Chicken Biryani" />
+      </div>
+      <div class="menu-item-right">
+        <h3>Chicken Biryani</h3>
+        <p>Fragrant rice with marinated chicken.</p>
+        <div class="menu-meta">
+          <span>⭐ 4.3</span>
+          <span>⏱ 30 mins</span>
+          <span>₹250</span>
+        </div>
+        <div class="add-cart">
+          <button class="decrease">-</button>
+          <span class="item-count">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="menu-item" data-category="starter" data-type="veg" data-price="180">
+      <div class="menu-item-left">
+        <img src="../img/chicken-meal.jpg" alt="Paneer Tikka" />
+      </div>
+      <div class="menu-item-right">
+        <h3>Paneer Tikka</h3>
+        <p>Chunks of paneer grilled with spices.</p>
+        <div class="menu-meta">
+          <span>⭐ 4.5</span>
+          <span>⏱ 25 mins</span>
+          <span>₹180</span>
+        </div>
+        <div class="add-cart">
+          <button class="decrease">-</button>
+          <span class="item-count">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="menu-item" data-category="dessert" data-type="veg" data-price="100">
+      <div class="menu-item-left">
+        <img src="../img/chicken-meal.jpg" alt="Gulab Jamun" />
+      </div>
+      <div class="menu-item-right">
+        <h3>Gulab Jamun</h3>
+        <p>Syrup-soaked milk-solid balls.</p>
+        <div class="menu-meta">
+          <span>⭐ 4.7</span>
+          <span>⏱ 15 mins</span>
+          <span>₹100</span>
+        </div>
+        <div class="add-cart">
+          <button class="decrease">-</button>
+          <span class="item-count">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="menu-item" data-category="starter" data-type="nonveg" data-price="200">
+      <div class="menu-item-left">
+        <img src="../img/chicken-meal.jpg" alt="Chicken 65" />
+      </div>
+      <div class="menu-item-right">
+        <h3>Chicken 65</h3>
+        <p>Spicy South Indian chicken starter.</p>
+        <div class="menu-meta">
+          <span>⭐ 4.6</span>
+          <span>⏱ 18 mins</span>
+          <span>₹200</span>
+        </div>
+        <div class="add-cart">
+          <button class="decrease">-</button>
+          <span class="item-count">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="menu-item" data-category="main-course" data-type="nonveg" data-price="260">
+      <div class="menu-item-left">
+        <img src="../img/chicken-meal.jpg" alt="Butter Chicken" />
+      </div>
+      <div class="menu-item-right">
+        <h3>Butter Chicken</h3>
+        <p>Grilled chicken in creamy tomato sauce.</p>
+        <div class="menu-meta">
+          <span>⭐ 4.8</span>
+          <span>⏱ 35 mins</span>
+          <span>₹260</span>
+        </div>
+        <div class="add-cart">
+          <button class="decrease">-</button>
+          <span class="item-count">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="menu-item" data-category="main-course" data-type="veg" data-price="220">
+      <div class="menu-item-left">
+        <img src="../img/chicken-meal.jpg" alt="Veg Pulao" />
+      </div>
+      <div class="menu-item-right">
+        <h3>Veg Pulao</h3>
+        <p>Basmati rice cooked with vegetables.</p>
+        <div class="menu-meta">
+          <span>⭐ 4.2</span>
+          <span>⏱ 20 mins</span>
+          <span>₹220</span>
+        </div>
+        <div class="add-cart">
+          <button class="decrease">-</button>
+          <span class="item-count">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 7 -->
+    <div class="menu-item" data-category="dessert" data-type="veg" data-price="120">
+      <div class="menu-item-left">
+        <img src="../img/chicken-meal.jpg" alt="Rasmalai" />
+      </div>
+      <div class="menu-item-right">
+        <h3>Rasmalai</h3>
+        <p>Spongy rasgullas in flavored milk.</p>
+        <div class="menu-meta">
+          <span>⭐ 4.4</span>
+          <span>⏱ 12 mins</span>
+          <span>₹120</span>
+        </div>
+        <div class="add-cart">
+          <button class="decrease">-</button>
+          <span class="item-count">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 8 -->
+    <div class="menu-item" data-category="main-course" data-type="nonveg" data-price="280">
+      <div class="menu-item-left">
+        <img src="../img/chicken-meal.jpg" alt="Mutton Curry" />
+      </div>
+      <div class="menu-item-right">
+        <h3>Mutton Curry</h3>
+        <p>Tender mutton in spicy gravy.</p>
+        <div class="menu-meta">
+          <span>⭐ 4.6</span>
+          <span>⏱ 40 mins</span>
+          <span>₹280</span>
+        </div>
+        <div class="add-cart">
+          <button class="decrease">-</button>
+          <span class="item-count">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Items 9 to 15 -->
+    <!-- Duplicate or add more realistic items and images -->
+    <!-- Just change img path, name, and content for realism -->
+
+    <!-- Example: Item 9 -->
+    <div class="menu-item" data-category="starter" data-type="veg" data-price="160">
+      <div class="menu-item-left">
+        <img src="../img/chicken-meal.jpg" alt="Veg Spring Roll" />
+      </div>
+      <div class="menu-item-right">
+        <h3>Veg Spring Roll</h3>
+        <p>Stuffed rolls with veggies and spices.</p>
+        <div class="menu-meta">
+          <span>⭐ 4.1</span>
+          <span>⏱ 15 mins</span>
+          <span>₹160</span>
+        </div>
+        <div class="add-cart">
+          <button class="decrease">-</button>
+          <span class="item-count">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Item 10 to 15 in same format -->
+
+  </div>
+
+  <script src="../js/restaurant.js"></script>
+</body>
+</html>

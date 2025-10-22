@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration Successful</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 15px;
+      padding: 40px 60px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 13, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .container h1 {
+      font-weight: 600;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      letter-spacing: 1.2px;
+    }
+
+    .container p {
+      font-weight: 400;
+      font-size: 1.1rem;
+      margin-bottom: 35px;
+      color: #e0e0ffcc;
+      line-height: 1.5;
+    }
+
+    .checkmark {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 25px;
+      border-radius: 50%;
+      background: #00ff88;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px #00ff88aa;
+      animation: pulse 1.6s infinite;
+    }
+
+    .checkmark svg {
+      fill: none;
+      stroke: #0b4d2a;
+      stroke-width: 6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      width: 40px;
+      height: 40px;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 20px #00ff88aa, 0 0 40px #00ff88aa;
+      }
+      50% {
+        box-shadow: 0 0 30px #00ff88ff, 0 0 60px #00ff88ff;
+      }
+    }
+
+    .btn-home {
+      text-decoration: none;
+      background: #00ff88;
+      color: #0b4d2a;
+      padding: 12px 30px;
+      font-weight: 600;
+      border-radius: 40px;
+      box-shadow: 0 5px 15px #00ff88aa;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-home:hover {
+      background: #00cc6a;
+      box-shadow: 0 8px 20px #00cc6aaa;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-labelledby="success-title">
+    <div class="checkmark" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <path d="M4 12l6 6L20 6" />
+      </svg>
+    </div>
+    <h1 id="success-title">Registration Successful!</h1>
+    <p>Thank you for signing up. Your account has been created successfully.<br />You can now explore our services and enjoy the full experience.</p>
+    <a href="./home.html" class="btn-home" role="button" aria-label="Go to Home Page">Go to Home</a>
+  </div>
+</body>
+</html>

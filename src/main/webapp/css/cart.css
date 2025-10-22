@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tagesschrift', sans-serif;
+}
+
+body {
+  background: #cf3b43;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #cf3b43;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #cf3b43;
+  font-weight: bold;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 40px;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.cart-items-section, .summary-section {
+  flex: 1;
+}
+
+.cart-items-section h2, .summary-section h3 {
+  color: #cf3b43;
+  margin-bottom: 20px;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#total {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#proceed-btn {
+  background-color: #cf3b43;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#proceed-btn:disabled {
+  background-color: #f5a1a6;
+  cursor: not-allowed;
+}

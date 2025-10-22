@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tagesschrift', sans-serif;
+  }
+  
+  body {
+    background: #cf3b43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .home img{
+    height: 40px;
+    margin-bottom: 900px;
+    margin-right: 225px;
+    font-size: 30px;
+  }
+  
+  .container {
+    display: flex;
+    gap: 40px;
+    background: #07070707;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px); /* optional: for glass effect */
+    width: 1500px;
+    height: 900px;
+  }
+  
+  .form-box1 {
+    flex: 2;
+    min-width: 300px;
+    box-shadow: 0 0 10px rgba(245, 93, 93, 0.1);
+    backdrop-filter: blur(10px); /* optional: for glass effect */
+    border: 5px solid rgb(161, 27, 27);
+  }
+
+  .login {
+    height: 850px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical centering */
+    align-items: center;       /* horizontal centering */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* optional: for glass effect */
+    background-color: rgba(161, 48, 48, 0.1); /* transparent white */
+    border-radius: 10px;
+  }
+  
+
+  .form-box2 {
+    flex: 2;
+    min-width: 300px;
+    background-image: url("../img/login.png");
+    background-size: cover;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fdfdfd;
+    font-size: 90px;
+  }
+  
+  .textbox {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .textbox input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .btn {
+    width: 300px;
+    padding: 10px;
+    background: #5e1427;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+  
+  .forgot-password,
+  .footer {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password a,
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  
+  .forgot-password a:hover,
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .textbox input,
+  .btn {
+    width: 300px;
+    max-width: 100%;
+  }
+  

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zomato Registration</title>
+  <link rel="stylesheet" href="../css/register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="./home.html" class="home"><img src="../img/home.svg" alt=""></a>
+  <div class="container">
+    <div class="form-box2">
+      <!-- Optionally add a background image or illustration here -->
+    </div>
+    
+    <div class="form-box1">
+      <div class="register">
+        <h2>Register</h2>
+        <form action="../registerUser" method="post">
+          <div class="textbox">
+            <input type="text" name="userName" placeholder="Full Name" required>
+          </div>
+          <div class="textbox">
+            <input type="email" name="email" placeholder="Email Address" required>
+          </div>
+          <div class="textbox">
+            <input type="password" name="password" placeholder="Password" required>
+          </div>
+          <div class="textbox">
+            <input type="text" name="phone" placeholder="Phone Number" required>
+          </div>
+          <div class="textbox">
+            <input type="text" name="address" placeholder="Address" required>
+          </div>
+
+          <label class="role-label">Select Role:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="role" value="Customer" required> Customer</label>
+            <label><input type="radio" name="role" value="RestaurantAdmin"> Restaurant Admin</label>
+            <label><input type="radio" name="role" value="DeliveryAgent"> Delivery Agent</label>
+            <label><input type="radio" name="role" value="SuperAdmin"> Super Admin</label>
+          </div>
+
+          <button type="submit" class="btn">Register</button>
+        </form>
+      </div>
+    </div>
+
+   
+  </div>
+</body>
+</html>
+
+ 

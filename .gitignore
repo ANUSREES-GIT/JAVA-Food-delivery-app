@@ -1,0 +1,23 @@
+# Eclipse & IDE files
+*.classpath
+*.project
+*.settings/
+*.iml
+*.idea/
+
+# Build output
+/build/
+/bin/
+/target/
+
+# Tomcat temporary files
+/.metadata/
+/wtpwebapps/
+/tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration Failed</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff5f6d 0%, #ffc371 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      border-radius: 15px;
+      padding: 40px 60px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(255, 95, 109, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .container h1 {
+      font-weight: 600;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      letter-spacing: 1.2px;
+    }
+
+    .container p {
+      font-weight: 400;
+      font-size: 1.1rem;
+      margin-bottom: 35px;
+      color: #ffebebcc;
+      line-height: 1.5;
+    }
+
+    .crossmark {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 25px;
+      border-radius: 50%;
+      background: #ff3b3b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px #ff3b3baa;
+      animation: pulse 1.6s infinite;
+    }
+
+    .crossmark svg {
+      fill: none;
+      stroke: #670000;
+      stroke-width: 6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      width: 40px;
+      height: 40px;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 20px #ff3b3baa, 0 0 40px #ff3b3baa;
+      }
+      50% {
+        box-shadow: 0 0 30px #ff3b3bff, 0 0 60px #ff3b3bff;
+      }
+    }
+
+    .btn-retry {
+      text-decoration: none;
+      background: #ff3b3b;
+      color: #670000;
+      padding: 12px 30px;
+      font-weight: 600;
+      border-radius: 40px;
+      box-shadow: 0 5px 15px #ff3b3baa;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-retry:hover {
+      background: #cc3232;
+      box-shadow: 0 8px 20px #cc323299;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-labelledby="fail-title">
+    <div class="crossmark" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </div>
+    <h1 id="fail-title">Registration Failed!</h1>
+    <p>Oops! Something went wrong while processing your registration.<br />Please check your details and try again.</p>
+    <a href="/register" class="btn-retry" role="button" aria-label="Try Registration Again">Try Again</a>
+  </div>
+</body>
+</html>
